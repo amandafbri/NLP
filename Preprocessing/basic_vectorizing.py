@@ -50,6 +50,7 @@ print(sequences_tf)
  maxlen will be the biggest sentence
  if we want to change that (maxlen=5), it's good to set the truncating part (truncating='post')
  it will change from [[3, 4, 2], [5, 6, 7, 2]] to [[3 4 2 0][5 6 7 2]]
+ shape of padded will be (len(sentences), maxlen)
  '''
 padded = pad_sequences(sequences_tf, padding='post')
 print(padded)
