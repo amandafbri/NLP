@@ -54,3 +54,9 @@ print(sequences_tf)
  '''
 padded = pad_sequences(sequences_tf, padding='post')
 print(padded)
+
+'''
+Useful functions
+'''
+vocabulary_size = len(tokenizer.word_index)  # +1 to considered the <OOV>
+max_sentence_lenght = max([len(x) for x in sentences])
